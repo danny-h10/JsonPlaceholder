@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments</title>
+</head>
+
+<body>
+
+    <!-- form to add a comment -->
+    <div>
+        <h1>Add Comment Form</h1>
+        <form id="createCommentForm">
+            <div>
+                <label for="body">Body:</label>
+                <input type="text" name="body" value="">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" value="">
+            </div>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" value="">
+            </div>
+            <div>
+                <label for="name">Post ID:</label>
+                <input type="text" name="postId" value="">
+            </div>
+            <button>Create Comment</button>
+        </form>
+    </div>
+
+    <!-- form to update a comment -->
+    <div>
+        <h1>Update Comment Form</h1>
+
+        <h3>What comment do you want to edit?</h3>
+        <!-- form to get the comment to edit -->
+        <div>
+            <form id="getCommentToEdit">
+                <div>
+                    <label for="commentId">Comment ID:</label>
+                    <input type="text" id="commentId" name="commentId" value="" required>
+                    <button>Get Comment To Update</button>
+                </div>
+            </form>
+        </div>
+
+        <hr>
+
+        <form id="updateCommentForm">
+            <!-- create hidden field so we have access to the ID of the record we want to update -->
+            <input type="hidden" name="id" id="id" value="">
+            <div>
+                <label for="body">Body:</label>
+                <input type="text" name="body" id="body" value="">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" value="">
+            </div>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" value="">
+            </div>
+            <div>
+                <label for="postId">Post ID:</label>
+                <input type="text" name="postId" id="postId" value="">
+            </div>
+            <button>Update Comment</button>
+        </form>
+    </div>
+
+    <!-- form to delete a comment -->
+    <h1>Delete Comment Form</h1>
+     <div>
+        <form id="commentToDeleteForm">
+            <div>
+                <label for="commentId">Comment ID:</label>
+                <input type="text" id="commentId" name="commentId" value="" required>
+                <button>Delete Comment</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="./scripts/demo.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New ToDo</title>
+</head>
+<body>
+    
+    <a href="index.html">Home Page</a>
+    <a href="todo.html">ToDo Page</a>
+    <a href="new-todo.html">New ToDo</a>
+    <br>
+
+    <h1>Remove the ID:</h1>
+    <div>
+        <form id="deleteId">
+            <div>
+                <label for="todoId">ToDo ID:</label>
+                <input type="text" id="todoId" name="todoId" value="" required>
+                <button>Delete ID</button>
+            </div>
+        </form>
+
+    </div>
+
+
+
+
+    <div>
+        <h1>Update ID:</h1>
+
+        <h3>What ID do you want to add?</h3>
+        <!-- form to get the comment to edit -->
+        <div>
+            <form id="getIdToEdit">
+                <div>
+                    <label for="getIdToEdit">Old ID:</label>
+                    <input type="text" id="getIdToEdit" name="getIdToEdit" value="" required>
+                    <button>Get ID#</button>
+                </div>
+            </form>
+        </div>
+
+    
+
+        <form id="updateIdForm">
+            <!-- create hidden field so we have access to the ID of the record we want to update -->
+            <input type="hidden" name="id" id="id" value="">
+            <div>
+                <label for="userId">userId:</label>
+                <input type="text" name="userId" id="userId" value="">
+            </div>
+            <div>
+                <label for="inputId">New Id:</label>
+                <input type="text" name="inputId" id="inputId" value="">
+            </div>
+            <div>
+                <label for="title">title:</label>
+                <input type="text" name="title" id="title" value="">
+            </div>
+            <div>
+                <label for="completed">completed:</label>
+                <input type="text" name="completed" id="completed" value="">
+            </div>
+            <button>Add</button>
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="scripts/edit-todo.js"></script>
+</body>
+</html>
